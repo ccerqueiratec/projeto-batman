@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Batman</title>
+    <link rel="stylesheet" href="../css/styles-contato.css">
 </head>
 <body>
-    Contatos
+    <header>
+        <img id="logo" src="../img/logo 3 batman.jpg" />
+        <nav>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../paginas/contatos.html">
+                    <li>Contatos</li>
+                </a>
+                <a href="../paginas/fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="../paginas/comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contact-container">
+        <div id="contact-content">
+            
+            <span id="contact">Contato</span>
+            
+            <form action="formulario-contato">
+                
+                    <label for="nome">Nome:</label>
+                    <input type="texto" id="nome" name="nome_usuario" placeholder="Seu nome...">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_usuario" placeholder="Informe um e-mail válido">
+                    <span id="opcoes">Opções</span><br>
+                    <select name="opcoes">
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="informacao">Informação</option>
+                        <option value="sugestao">Sugestão</option>
+                    </select><br>
+                    <label for="texto">Mensagem:</label><br>
+                    <textarea name="texto_usuario"></textarea>
+            </form>
+            <button class="button">Enviar mensagem</button>    
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="../img/logo 3 batman.jpg"/>
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por Celso Cerqueira</span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./paginas/contatos.html">
+                    <li>Contatos</li>
+                </a>
+                <a href="./paginas/fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./paginas/comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>    
 </body>
 </html>
