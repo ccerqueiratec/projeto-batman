@@ -45,45 +45,46 @@ li:hover{
     
 }
 
-#text-photos{
+#text-comments{
     width: 100%;
-    background-color: #fff;
-    color: #000;
-    font-size: 25px;
+    background: none;
+    color: #fff;
+    font-size: 30px;
     text-align: center;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    border-bottom: 2px solid #D21617;
-    border-top: 2px solid #D21617;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     
 }
 
-#photos-container{
+#comments-container{
     background-image: url('https://wallpapercave.com/wp/wp9429756.jpg');
     background-position: 30% 30%;
     background-size: cover;
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
          
 }
 
-#photos-content{
+#comments-content{
     background: none;
     width: 65%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 700px;
-    grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
-    column-gap: 30px;
-    
     
 }
 
-.photo{
-    border: 2px solid #000;
+.comment{
+    
+    background: none;
     width: 90%;
     height: 300px;
     background-size: cover;
@@ -92,52 +93,92 @@ li:hover{
     cursor: pointer;
     transition: 1s;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     padding: 0 0 20px 10px;
     color: #fff;
     font-size: 17px;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.photo:hover{
-    transform: scale(1.08);
+.user-content{
+    background: none;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.user{
+    border: 1px solid green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
 }
 
 .photo-1{
-    background-image: url('https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg');
+    background-image: url('../img/user-1.avif');
+    background-size: cover;
 }
 
 .photo-2{
-    background-image: url('https://uploads.emaisgoias.com.br/2022/03/37ff0a88-the-batman.jpeg');
+    background-image: url('../img/user-2.jpg');
+    background-size: cover;
 }
 
 .photo-3{
-    background-image: url('https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/03/china-poster-1.jpg?fit=1913%2C1313&ssl=1');
+    background-image: url('../img/user-3.jpg');
+    background-size: cover;
 }
 
 .photo-4{
-    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=675&crop=1');
+    background-image: url('../img/user-4.jpg');
+    background-size: cover;
 }
 
 .photo-5{
-    background-image: url('https://www.cinemaescrito.com/wp-content/uploads/2022/03/the-batman-910x515.jpg');
+    background-image: url('../img/user-5.jpg');
+    background-size: cover;
 }
 
 .photo-6{
-    background-image: url('https://noitedeoscar.com.br/wp-content/uploads/2022/03/t08yysk5fd781-1024x670.png');
+    background-image: url('../img/user-6.png');
+    background-size: cover;
 }
 
-.photo-7{
-    background-image: url('https://i.ytimg.com/vi/rsQEor4y2hg/maxresdefault.jpg');
+.name-user{
+    background: none;
+    margin-top: 20px;
+    text-align: center;
+    
 }
 
-.photo-8{
-    background-image: url('https://s2.glbimg.com/dPBB3KS_x63Ce5Z_5LoWxoUYOeQ=/600x400/smart/e.glbimg.com/og/ed/f/original/2020/12/31/captura_de_tela_2020-12-31_as_08.00.52.png');
+#name-user{
+    background: none;
 }
 
-.photo-9{
-    background-image: url('../img/foto-9.jpg');
+.comment-user{
+    border: 1px solid white;
+    border-radius: 45px;
+    background-color: aliceblue;
+    color: #000;
+    width: 70%;
+    height: 222px;
+    margin-left: 20px;
+    margin-top: 40px;
+    padding: 15px;
+}
+
+p{
+    background: none;
+    text-align: justify;
+    font-size: 28px;
+    
+}
+
+.comment:hover{
+    transform: scale(1.08);
 }
 
 
@@ -175,11 +216,26 @@ span{
         display: none;
     }
 
-    #photos-content{
-        grid-template-columns: 1fr;
-        margin-left: 0px;
+    #comments-container{
+        background-position: 40%;
+        
+    }
+    
+    .comment{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
     }
 
+    .comment-user{
+        height: auto;
+    }
     
+    p{
+        font-size: 18px;
+    }
+
 }
